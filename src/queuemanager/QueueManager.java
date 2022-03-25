@@ -40,6 +40,9 @@ public class QueueManager {
                 System.out.println("Using an Sorted list.");
                 break;
             case "ul":
+                q = new UnsortedListPriorityQueue<>();
+                System.out.println("Using an Sorted list.");
+                break;
             case "h":
             default:
                 q = new SortedArrayPriorityQueue<>(8);
