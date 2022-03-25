@@ -110,6 +110,8 @@ public class SortedListPriorityQueue<T> implements PriorityQueue<T> {
               result = result + current.toString();
               current = current.next;
             }
+            
+            result = result + "]";
         return result;
     }
 }
