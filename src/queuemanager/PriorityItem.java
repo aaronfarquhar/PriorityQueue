@@ -9,10 +9,14 @@ public class PriorityItem<T> {
 
     private final T item;
     private final int priority;
+    
+    //reference to the next node for the LinkedList
+    PriorityItem<T> next;
 
     public PriorityItem(T item, int priority) {
         this.item = item;
         this.priority = priority;
+        this.next = null;
     }
 
     public T getItem() {

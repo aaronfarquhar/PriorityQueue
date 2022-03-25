@@ -32,8 +32,17 @@ public class QueueManager {
                 System.out.println("Using a sorted array.");
                 break;
             case "ua":
+                q = new UnsortedArrayPriorityQueue<>(8);
+                System.out.println("Using an unsorted array.");
+                break;
             case "sl":
+                q = new SortedListPriorityQueue<>();
+                System.out.println("Using an Sorted list.");
+                break;
             case "ul":
+                q = new UnsortedListPriorityQueue<>();
+                System.out.println("Using an Sorted list.");
+                break;
             case "h":
             default:
                 q = new SortedArrayPriorityQueue<>(8);
